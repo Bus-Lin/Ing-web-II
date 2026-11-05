@@ -1,0 +1,23 @@
+/* src/custom.css */
+
+:root {
+  --yugi-gold: #ffd700;
+  --yugi-dark-bg: #121212;
+  --yugi-card-bg: #1e1e1e;
+  --yugi-border: #333333;
+}
+
+/* Aplicar un fondo general oscuro a toda la app si lo deseas */
+body {
+  background-color: var(--yugi-dark-bg);
+  color: #ffffff;
+}
+
+/* Ejemplo de una clase personalizada reutilizable */
+.bg-yugi-dark {
+  background-color: var(--yugi-card-bg) !important;
+}
+
+.text-gold {
+  color: var(--yugi-gold) !important;
+}
