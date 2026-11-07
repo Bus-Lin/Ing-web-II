@@ -1,4 +1,4 @@
- 1. Descripción de la Plataforma e Información Pública 
+ 1. Descripción de la Plataforma
 
  
 
