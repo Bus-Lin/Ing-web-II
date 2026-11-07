@@ -47,7 +47,6 @@ export default function PiePagina() {
       {/* Línea divisoria y Copyright */}
       <hr className="border-warning my-4 opacity-50" />
       <div className="text-center text-light small">
-        <p className="mb-0">© 2026 Jairo Antonio Herazo — Todos los derechos reservados.</p>
       </div>
     </footer>
   );

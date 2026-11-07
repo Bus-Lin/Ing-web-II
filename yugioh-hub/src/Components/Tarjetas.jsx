@@ -2,7 +2,7 @@ export default function Tarjetas() {
   return (
     <div className="container mt-5 py-5 bg-dark border border-warning rounded-4 shadow-lg">
       <h2 className="mb-5 text-center text-warning fw-bold text-uppercase tracking-wide">
-        🎴 Tipos de Decks Legendarios
+        🎴 Tipos de Decks
       </h2>
       
       <div className="row g-4 justify-content-center px-3">
