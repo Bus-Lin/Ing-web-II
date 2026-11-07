@@ -32,6 +32,12 @@ export default function Hero() {
                 Aprende a jugar Decks
               </a>
               <a
+                href="#cartas"
+                className="btn btn-warning btn-lg fw-bold shadow text-center"
+              >
+                Conoce las cartas de Yugi-Oh
+              </a>
+              <a
                 href="https://yugioh.fandom.com/es/wiki/Yu-Gi-Oh!"
                 target="_blank"
                 rel="noopener noreferrer"
