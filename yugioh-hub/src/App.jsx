@@ -1,20 +1,27 @@
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import Carrusel from "./Components/Carrusel";
-import Tarjetas from "./Components/Tarjetas";
-import PiePagina from "./Components/PiePagina";
-import Novedades from "./Components/Novedades";
-function App() {
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import PiePagina from './components/PiePagina';
+import Inicio from './views/Inicio';
+import Favoritos from './views/Favoritos';
+
+export default function App() {
   return (
-    <div className="bg-dark min-vh-100 text-dark">
-      <Navbar />
-      <Hero />
-      <Carrusel />
-      <Tarjetas />
-      <Novedades />
-      <PiePagina />
-    </div>
+    <BrowserRouter>
+      <div className="bg-dark text-white min-vh-100 d-flex flex-column">
+        
+        
+        <Navbar />
+        
+        
+        <Routes>
+          <Route path="/" element={<Inicio />} />
+          <Route path="/favoritos" element={<Favoritos />} />
+        </Routes>
+
+        
+        <PiePagina />
+        
+      </div>
+    </BrowserRouter>
   );
 }
-
-export default App;
