@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import exodiaImg from "../assets/Imagenes/hero/Exodia.webp";
 
 export default function Hero() {
@@ -31,12 +32,12 @@ export default function Hero() {
               >
                 Aprende a jugar Decks
               </a>
-              <a
-                href="#cartas"
+              <Link
+                to="/cartas"
                 className="btn btn-warning btn-lg fw-bold shadow text-center"
               >
                 Conoce las cartas de Yugi-Oh
-              </a>
+              </Link>
               <a
                 href="https://yugioh.fandom.com/es/wiki/Yu-Gi-Oh!"
                 target="_blank"

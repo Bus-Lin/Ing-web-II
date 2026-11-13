@@ -1,27 +1,24 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import PiePagina from './components/PiePagina';
-import Inicio from './views/Inicio';
-import Favoritos from './views/Favoritos';
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './Components/Navbar'
+import PiePagina from './Components/PiePagina'
+import Home from './pages/Home'
+import Categorias from './pages/Categorias'
+import CartasPorCategoria from './pages/CartasPorCategoria'
+import Cartas from './pages/Cartas'   // ← NUEVO: importa la página
+import './App.css'
 
-export default function App() {
+function App() {
   return (
-    <BrowserRouter>
-      <div className="bg-dark text-white min-vh-100 d-flex flex-column">
-        
-        
-        <Navbar />
-        
-        
-        <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/favoritos" element={<Favoritos />} />
-        </Routes>
-
-        
-        <PiePagina />
-        
-      </div>
-    </BrowserRouter>
-  );
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/categorias" element={<Categorias />} />
+        <Route path="/categorias/:arquetipo" element={<CartasPorCategoria />} />
+        <Route path="/cartas" element={<Cartas />} />   {/* ← NUEVO: la ruta */}
+      </Routes>
+      <PiePagina />
+    </>
+  )
 }
+export default App

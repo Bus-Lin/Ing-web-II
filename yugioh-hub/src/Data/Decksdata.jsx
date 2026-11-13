@@ -1,4 +1,4 @@
-export const cateogiresData = ["todos", "OTK", "Fussion", "Syncro", "Link"];
+export const categoriasData = ["todos", "OTK", "Fussion", "Syncro", "Link"];
 
 export const DecksData = [
   {

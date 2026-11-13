@@ -1,7 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 
-// Importar Bootstrap antes del CSS propio
+// Importaciones de Bootstrap (mantener para no perder estilos)
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
@@ -10,6 +11,8 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>
 )
