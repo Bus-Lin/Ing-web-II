@@ -4,7 +4,9 @@ import PiePagina from './Components/PiePagina'
 import Home from './pages/Home'
 import Categorias from './pages/Categorias'
 import CartasPorCategoria from './pages/CartasPorCategoria'
-import Cartas from './pages/Cartas'   // ← NUEVO: importa la página
+import Cartas from './pages/Cartas'
+import Login from './views/Login'
+import RutaProtegida from './Components/RutaProtegida'
 import './App.css'
 
 function App() {
@@ -15,10 +17,22 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/categorias" element={<Categorias />} />
         <Route path="/categorias/:arquetipo" element={<CartasPorCategoria />} />
-        <Route path="/cartas" element={<Cartas />} />   {/* ← NUEVO: la ruta */}
+        <Route path="/cartas" element={<Cartas />} />
+        <Route path="/login" element={<Login />} />
+
+        
+        <Route
+          path="/favoritos"
+          element={
+            <RutaProtegida>
+              <Cartas />
+            </RutaProtegida>
+          }
+        />
       </Routes>
       <PiePagina />
     </>
   )
 }
+
 export default App
